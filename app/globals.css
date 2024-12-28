@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-primaryGray;
+  }
+
+  .swiper-button-disabled {
+    @apply !opacity-40;
+  }
+
+  .shadow-card {
+    -webkit-box-shadow: inset 0px 1px 0.5px 0.5px rgba(247, 197, 35, 0.7);
+    -moz-box-shadow: inset 0px 1px 0.5px 0.5px rgba(247, 197, 35, 0.7);
+    box-shadow: inset 0px 1px 0.5px 0.5px rgba(247, 197, 35, 0.7);
+  }
+
+  .swiper-slide-custom {
+    @apply md:!opacity-40;
+  }
+  .swiper-slide-custom-active {
+    @apply !opacity-100;
+  }
+
+  .swiper-pagination-bullet-custom {
+    @apply cursor-pointer me-1 w-2 h-2 inline-block rounded-full opacity-90 bg-[#192335] transition-all   duration-300;
+  }
+  .swiper-pagination-bullet-active-custom {
+    @apply w-8 opacity-100 bg-primaryYellow;
+  }
+
+  .wrapper-slider {
+    @apply border-2 border-dashed border-primaryBlack;
+    background: linear-gradient(black 0 0) padding-box,
+      linear-gradient(to right, #f7c523, #30c63e, #ef3333, #f2f5f9) border-box;
+  }
+}
